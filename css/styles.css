@@ -239,6 +239,7 @@ input {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 
   color: var(--title-color);
 }
@@ -252,7 +253,6 @@ input {
   padding: 10px 32px;
   display: block;
   margin: 0 auto;
-  margin-top: 30px;
   min-width: 200px;
 
   font-family: inherit;
@@ -917,6 +917,7 @@ input {
 }
 
 .input-wrap {
+  display: block;
   position: relative;
 }
 
@@ -943,7 +944,12 @@ input {
   transition: fill var(--duration) var(--timing-function);
 }
 
+.form-field:nth-of-type(4) {
+  margin-bottom: 20px;
+}
+
 .comment-input {
+  display: block;
   margin: 0;
   width: 100%;
   min-height: 120px;
@@ -971,10 +977,6 @@ input {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.textarea {
-  margin-bottom: 20px;
-}
-
 .checkbox {
   position: absolute;
   white-space: nowrap;
@@ -993,6 +995,7 @@ input {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  margin-bottom: 30px;
 }
 
 .checkbox-label {
@@ -1037,6 +1040,12 @@ input {
 .input-wrap:focus-within .input-icon {
   fill: var(--accent-color);
 }
+
+.checkbox:focus+.checkbox-icon {
+  border-color: var(--accent-color);
+}
+
+
 
 /* _________MAIN COLORS________
 
